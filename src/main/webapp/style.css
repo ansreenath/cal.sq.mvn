@@ -41,7 +41,7 @@ body, html {
 	margin: auto;
      width: 50%;
      border: 3px solid BLUE;
-     background-color: #b0e0e6;
+     background-color: #f0e0e6;
     padding: 10px;
 }
 
@@ -52,8 +52,8 @@ body, html {
 	text-align: center;
 }
 #SimpleCalculator {background-color: orange;}
-#AgeCalculator {background-color: orange;}
-#EMICalculator {background-color: orange;}
+#AgeCalculator {background-color: grey;}
+#EMICalculator {background-color: blue;}
 
 
 
