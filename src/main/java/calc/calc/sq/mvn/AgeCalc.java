@@ -2,10 +2,7 @@ package calc.calc.sq.mvn;
 import java.time.LocalDate;
 import java.time.Period;
 
-import java.io.Externalizable;
-import java.io.IOException;
-import java.io.ObjectInput;
-import java.io.ObjectOutput;
+
 import java.time.DateTimeException;
 
 public class AgeCalc {
@@ -16,7 +13,7 @@ public class AgeCalc {
 		String date1 = temp.toString();
 		System.out.println(date1);
 		String resultString = "You are ";
-		int sum = 0;
+		
 	    LocalDate todayDate = LocalDate.now();
 	    try {
 	    	LocalDate dobDate = LocalDate.of(Integer.parseInt(temp[0]), Integer.parseInt(temp[1]), Integer.parseInt(temp[2]));
@@ -28,12 +25,12 @@ public class AgeCalc {
 		    	throw new DateTimeException("Invalid day exception");
 		    }
 		    if(months < 0){
-		    	++sum;
+		    	
 		    	System.out.println(obj.getClass());
 		    	throw new DateTimeException("Invalid month exception");
 		    }
 		    if(years < 0){
-		    	sum=+10;
+		    	
 		    	throw new DateTimeException("Invalid year exception");
 		    }
 		    if(years != 0) {
